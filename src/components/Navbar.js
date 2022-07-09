@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './NavBar.css';
+import '../NavBar.css';
 import { FaRegUserCircle } from 'react-icons/fa';
 
 const NavBar = () => (
