@@ -33,11 +33,6 @@ run: `npm start`
 - LinkedIn: [@ABDUL ALI](https://www.linkedin.com/in/abdul-ali-5400bb216/)
 - Twitter: [@mrabdul_ali](https://twitter.com/mrabdul_ali)
 
-
-## Collaborators
-
-
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
