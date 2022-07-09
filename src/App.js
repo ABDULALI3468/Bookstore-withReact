@@ -1,21 +1,21 @@
 import './App.css';
-import {
-  BrowserRouter as Router, Routes, Route,
-} from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Books from './components/Books';
-import Category from './components/Category';
+import BookContainer from './components/BookContainer';
+
+const books = [
+  {
+    id: 2,
+    title: 'The Hunger Games',
+    author: 'Suzanne Collins',
+    category: 'Action',
+
+  },
+];
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Books />} />
-        <Route path="/Category" element={<Category />} />
-      </Routes>
-    </Router>
-
+    <div className="App">
+      <BookContainer books={books} />
+    </div>
   );
 }
 

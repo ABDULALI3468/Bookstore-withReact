@@ -1,62 +1,49 @@
-# Microverse React Book Application Javascript
+# BookStore
+This is an app that  displays a list of books, allow users add a book and remove a selected book.
 
-> For the React Javascript milestone in building a Books Application,
+## Built With
 
-> set up a new repository and prepare it for development using best practices (e.g. linters).
+- HTML
+- CSS
+-React
 
-# Screenshot
+## Live demo link (Not Available)
 
-> This is the first [interface]()
+## Getting Started
 
-## Built with
+To get a local copy up and running:
 
-- REACT HTML & CSS
+1. Clone this repository or download the Zip folder:
 
-## Install Dependancies
+**``git clone https://github.com/jheart-vic/BookStore.git``**
 
-run : `npm install`
+2. use the following commands
 
-### Build the app
+**``npm install ``**, 
+**``npm start``**
 
-run: `npm run build`
+## Author
 
-### Run the app
+👤 **Victor Akabueze**
 
-run: `npm start`
+- Linkedin [victor-David](linkedin.com/in/victor-chiemerie-302a97230)
+-Twitter [victor-David](https://twitter.com/Victorjheart)
+- Github: [@Victor-David](https://github.com/jheart-vic)
 
+## Credits
 
-## Authors
-
-👤 **ABDUL ALI **
-
-- GitHub: [@ABDULALI3468](https://github.com/ABDULALI3468)
-- LinkedIn: [@ABDUL ALI](https://www.linkedin.com/in/abdul-ali-5400bb216/)
-- Twitter: [@mrabdul_ali](https://twitter.com/mrabdul_ali)
+Template from this [MICROVERSE](https://www.microverse.org/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-## Getting Started
+Feel free to check the [issues page](https://github.com/jheart-vic/BookStore/issues).
 
-To get a local copy follow these simple steps:
+## Show your support
 
-- Copy this link .
+Give a ⭐️ if you like this project and how we manage to build it!
 
-- Create a local directory that you want to clone the repository.
+## 📝 License
 
-- Open the command prompt in the created directory.
-
-- On the terminal run this command git clone
-
-- Go to the repository folder using command prompt cd math-magician.
-
-- Install the dev dependencies for linters run npm install.
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-
+This project is [MIT](./MIT.md) licensed.

@@ -1,8 +1,13 @@
-import './Books.css';
+import React from 'react';
+import './Book.css';
 
-function Category() {
-  return (
-    <button type="button">Check Status</button>
-  );
-}
+const Category = () => (
+  <div>
+    <>
+      <h1>checking...</h1>
+      <button type="button" className="updateBtn">Check status</button>
+    </>
+  </div>
+);
+
 export default Category;

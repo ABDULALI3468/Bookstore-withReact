@@ -1,40 +1,26 @@
-import React, { Component } from 'react';
-import './Books.css';
-import Forms from './Forms';
+import React from 'react';
+import PropTypes from 'prop-types';
+import Book from './Book';
+import AddBook from './AddBook';
 
-class Books extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const Books = ({ books }) => (
+  <>
+    <ul className="book-content">
+      {books.map((book) => <Book key={book.id} book={book} />)}
+    </ul>
+    <AddBook />
+  </>
+);
 
-  render() {
-    return (
-      <>
-        <div className="card">
-          <div className="main-area">
-            <span>Action</span>
-            <h1>The hunger games</h1>
-            <p>Unseen Content</p>
-            <ul>
-              <li>Corn</li>
-              <li>Corn</li>
-              <li>Corn</li>
-            </ul>
-          </div>
+Books.propTypes = {
+  books: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+      author: PropTypes.string.isRequired,
+      category: PropTypes.string.isRequired,
+    }).isRequired,
+  ).isRequired,
+};
 
-          <div className="main-area2">
-            <h4>64%</h4>
-          </div>
-          <div className="main-area3">
-            <h4>Current Chapter</h4>
-            <h5>Chapter 17</h5>
-            <button type="button">UPDATE CHAPTER</button>
-          </div>
-        </div>
-        <Forms />
-      </>
-    );
-  }
-}
 export default Books;
