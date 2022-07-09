@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Books from './Books';
 import Category from './Category';
-import NavBar from './NavBar.js';
+import NavBar from './NavBar';
 import './Book.css';
 
 const BookContainer = ({ books }) => (
