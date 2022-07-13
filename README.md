@@ -15,7 +15,7 @@ To get a local copy up and running:
 
 1. Clone this repository or download the Zip folder:
 
-**``git clone https://github.com/jheart-vic/BookStore.git``**
+**``git clone https://github.com/ABDULALI3468/Bookstore-withReact.git``**
 
 2. use the following commands
 
@@ -24,11 +24,11 @@ To get a local copy up and running:
 
 ## Author
 
-👤 **Victor Akabueze**
+👤 **ABDUL ALI**
 
-- Linkedin [victor-David](linkedin.com/in/victor-chiemerie-302a97230)
--Twitter [victor-David](https://twitter.com/Victorjheart)
-- Github: [@Victor-David](https://github.com/jheart-vic)
+- Linkedin [@ABDUL ALI](https://www.linkedin.com/in/abdul-ali-5400bb216/)
+-Twitter [@mrabdul_ali](https://twitter.com/mrabdul_ali)
+- Github: [@ABDULALI3468](https://github.com/ABDULALI3468/)
 
 ## Credits
 
@@ -38,7 +38,7 @@ Template from this [MICROVERSE](https://www.microverse.org/)
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/jheart-vic/BookStore/issues).
+Feel free to check the [issues page](https://github.com/ABDULALI3468/Bookstore-withReact/issues).
 
 ## Show your support
 
