@@ -1,18 +1,16 @@
-const CHECK_STATUS = 'bookstore_app/cateories/CHECK_STATUS';
+const CHECK_STATUS = 'bookstore-app/categories/CHECK_STATUS';
 
 export const checkStatus = () => ({
   type: CHECK_STATUS,
 });
 
-const categoryReducer = (state = [], action) => {
+const categoriesReducer = (state = [], action) => {
   switch (action.type) {
-    case CHECK_STATUS: {
-      return 'Under construction';
-    }
-    default: {
+    case CHECK_STATUS:
+      return 'Under Construction';
+    default:
       return state;
-    }
   }
 };
 
-export default categoryReducer;
+export default categoriesReducer;

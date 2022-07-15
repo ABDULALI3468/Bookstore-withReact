@@ -1,23 +1,23 @@
 import './App.css';
-import { useSelector } from 'react-redux/es/exports';
-import BookContainer from './components/BookContainer';
-
-// const books = [
-//   {
-//     id: 2,
-//     title: 'The Hunger Games',
-//     author: 'Suzanne Collins',
-//     category: 'Action',
-
-//   },
-// ];
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from './redux/configureStore';
+import NavBar from './components/NavBar';
+import BooksContainer from './components/BooksContainer';
+import Categories from './components/Categories';
 
 function App() {
-  const books = useSelector((state) => state.books);
   return (
-    <div className="App">
-      <BookContainer books={books} />
-    </div>
+    <BrowserRouter>
+      <Provider store={store}>
+        <NavBar />
+        <Routes>
+          <Route exact path="/" element={<BooksContainer />} />
+          <Route path="/books" element={<BooksContainer />} />
+          <Route path="/categories" element={<Categories />} />
+        </Routes>
+      </Provider>
+    </BrowserRouter>
   );
 }
 

@@ -1,23 +1,36 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import '../NavBar.css';
-import { FaRegUserCircle } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
 
-const NavBar = () => (
-  <>
-    <div className="navbar">
-      <div className="firstChild">
-        <h1 className="firstChildText">Bookstore CMS</h1>
-        <Link to="/" className="Link">Book</Link>
-        <Link to="/category" className="Link">Category</Link>
-      </div>
-      <div className="iconDiv">
-        <Link className="profile" to="/">
-          <FaRegUserCircle className="Icon" />
-        </Link>
-      </div>
-    </div>
+class NavBar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
 
-  </>
-);
+  render() {
+    const links = [
+      { id: 1, text: 'Books', url: '/books' },
+      { id: 2, text: 'Categories', url: '/categories' },
+    ];
+
+    return (
+      <nav className="d-flex space-between p-y align-center">
+        <div className="d-flex">
+          <h1 className="text-primary fw-bold">Bookstore CMS</h1>
+          <ul className="d-flex align-center">
+            {links.map((link) => (
+              <li key={link.id}>
+                <NavLink to={link.url}>{link.text}</NavLink>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="d-flex align-center user-profile">
+          <span className="fa fa-user" />
+        </div>
+      </nav>
+    );
+  }
+}
+
 export default NavBar;

@@ -6,6 +6,8 @@ This is an app that  displays a list of books, allow users add a book and remove
 - HTML
 - CSS
 -React
+-Redux
+-JavaScript
 
 ## Live demo link (Not Available)
 
