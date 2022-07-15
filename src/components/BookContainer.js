@@ -8,7 +8,6 @@ import './Book.css';
 
 const BookContainer = ({ books }) => (
   <Router>
-
     <div className="div">
       <NavBar />
       <Routes>
