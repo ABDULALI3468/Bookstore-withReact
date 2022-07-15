@@ -1,28 +1,28 @@
-import React, { useState } from "react";
-import { useDispatch } from "react-redux";
-import { v4 as uuidv4 } from "uuid";
-import { createBook } from "../redux/books/books";
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
+import { createBook } from '../redux/books/books';
 
 const AddBook = () => {
-  const [title, setTitle] = useState("");
-  const [author, setAuthor] = useState("");
+  const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
   const dispatch = useDispatch();
 
   const handleBook = (event) => {
     event.preventDefault();
 
-    if (title !== "" && author !== "") {
+    if (title !== '' && author !== '') {
       dispatch(
         createBook({
           item_id: uuidv4(),
-          category: "Computer Science",
+          category: 'Computer Science',
           title,
           author,
-        })
+        }),
       );
     }
-    setTitle("");
-    setAuthor("");
+    setTitle('');
+    setAuthor('');
   };
 
   return (

@@ -1,6 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Action from "./Action";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Action from './Action';
+
+const randomProgress = (min = 60, max = 85) => Math.floor(Math.random() * (max - min)) + min;
+const randomChapter = (min = 1, max = 15) => Math.floor(Math.random() * (max - min)) + min;
 
 class Book extends React.Component {
   constructor(props) {
@@ -30,14 +33,23 @@ class Book extends React.Component {
           <div className="d-flex font-large">
             <span className="progress" />
             <div className="d-flex flex-column">
-              <span>20%</span>
+              <span>
+                {randomProgress()}
+                %
+              </span>
               <span className="text-dull">Completed</span>
             </div>
           </div>
           <div className="border" />
           <div>
             <h4 className="text-dull">CURRENT CHAPTER</h4>
-            <div className="m-t-1">Chapter 3 : Unknown</div>
+            <div className="m-t-1">
+              Chapter
+              {' '}
+              :
+              {' '}
+              {randomChapter()}
+            </div>
             <div>
               <button className="p-1 btn m-t-1" type="button">
                 Update Progress
@@ -51,10 +63,10 @@ class Book extends React.Component {
 }
 
 Book.defaultProps = {
-  id: "",
-  category: "",
-  title: "",
-  author: "",
+  id: '',
+  category: '',
+  title: '',
+  author: '',
 };
 
 Book.propTypes = {

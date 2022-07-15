@@ -1,4 +1,4 @@
-const CHECK_STATUS = "bookstore-app/categories/CHECK_STATUS";
+const CHECK_STATUS = 'bookstore-app/categories/CHECK_STATUS';
 
 export const checkStatus = () => ({
   type: CHECK_STATUS,
@@ -7,7 +7,7 @@ export const checkStatus = () => ({
 const categoriesReducer = (state = [], action) => {
   switch (action.type) {
     case CHECK_STATUS:
-      return "Under Construction";
+      return 'Under Construction';
     default:
       return state;
   }
